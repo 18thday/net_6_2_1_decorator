@@ -12,6 +12,7 @@ public:
 class DecoratedText : public Text {
 public:
     explicit DecoratedText(Text* text) : text_(text) {}
+    virtual ~DecoratedText() = default;
     Text* text_;
 };
 
